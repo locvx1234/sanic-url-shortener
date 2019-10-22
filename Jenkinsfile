@@ -53,8 +53,11 @@ pipeline {
                     waitForQualityGate abortPipeline: true
                 }
             }
-            
-            
+        }
+        stage("Check Syntax") {
+            steps {
+                sh 'tox -e pep8'
+            }
         }
     }
     
