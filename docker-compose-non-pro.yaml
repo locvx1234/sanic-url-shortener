@@ -29,7 +29,7 @@ services:
         container_name: sanic_db_con
         env_file:
             - ./.env
-        # volumes:
-        #     - ./pg:/var/lib/postgres/data/
+        volumes:
+            - ./pg:/var/lib/postgres/data/
         expose:
             - "5432"
