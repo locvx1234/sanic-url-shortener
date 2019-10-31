@@ -1,0 +1,18 @@
+apiVersion: v1beta1
+kind: Deployment
+metadata:
+  name: sanic_nginx
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+        tier: frontend
+    spec:
+      containers:
+        - name: sanic-nginx-con
+          image: namptit307/sanic_nginx
+          imagePullPolicy: IfNotPresent
+          pors:
+            - containerPort: 80
