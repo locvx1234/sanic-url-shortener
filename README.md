@@ -3,7 +3,7 @@
 #### Using docker-compose file for non-production
 
 Test trigger
-test trigger2 
+test trigger23 
 Another URL shoterner app.
 
 This is an example of using [Sanic](https://github.com/channelcat/sanic) with [asyncpg](https://github.com/MagicStack/asyncpg) - a fast PostgreSQL client lib for asyncio.
